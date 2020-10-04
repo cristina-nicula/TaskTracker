@@ -10,8 +10,8 @@
 
 .item-btn {
   padding: 20px 20px;
-  margin: auto;
   border-radius: 5px;
+  margin: 0 10px;
   border: none;
   outline: none;
   background-color: #9fcdff;
@@ -21,7 +21,7 @@
   }
 }
 
-#form-list-wrapper .item-list .item {
+ .item {
   margin-top: 20px;
   width: 40%;
   padding: 2%;

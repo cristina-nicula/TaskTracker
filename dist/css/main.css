@@ -6,8 +6,8 @@
 
 .item-btn {
   padding: 20px 20px;
-  margin: auto;
   border-radius: 5px;
+  margin: 0 10px;
   border: none;
   outline: none;
   background-color: #9fcdff;
@@ -15,7 +15,7 @@
   .item-btn:hover {
     background-color: #7abaff; }
 
-#form-list-wrapper .item-list .item {
+.item {
   margin-top: 20px;
   width: 40%;
   padding: 2%;
@@ -86,6 +86,7 @@ nav {
   padding: 6px 12px;
   margin: 14px;
   border-radius: 3px;
+  border: none;
   outline-color: #007BFF; }
   #page-content-wrapper .menu-toggle-wrapper #menu-toggle:hover {
     background-color: #0b8cec; }
