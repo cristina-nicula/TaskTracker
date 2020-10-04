@@ -23,6 +23,11 @@ nav {
 #wrapper {
   display: flex; }
 
+#sidebar-wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  border-right: #cccccc 1px solid; }
+
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem; }

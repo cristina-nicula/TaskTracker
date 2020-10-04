@@ -35,6 +35,9 @@ nav {
 }
 
 #sidebar-wrapper {
+  background-color: $bg-main;
+  min-height: 100vh;
+  border-right: $border-color 1px solid;
 }
 
 #sidebar-wrapper .sidebar-heading {
