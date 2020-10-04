@@ -72,8 +72,10 @@ nav {
       padding: 6px 12px;
       margin: 14px;
       border-radius: 3px;
-      border: none;
-      outline: none;
+      outline-color: $toggle-btn-color;
+      &:hover {
+        background-color: $hover-toggle-btn;
+      }
     }
   }
   #form-list-wrapper {
