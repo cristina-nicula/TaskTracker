@@ -26,32 +26,26 @@
     <!--wrapper -->
     <div id="wrapper">
       <!-- Sidebar -->
-      <div id="sidebar-wrapper">
+      <nav id="sidebar-wrapper">
         <div class="sidebar-heading text-align-center">Issue tracker</div>
         <div class="list-group text-align-center">
           <a href="#" class="list-group-item">Home</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Tickets</a
-          >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Projects</a
-          >
+          <a href="#" class="list-group-item">Tickets</a>
+          <a href="#" class="list-group-item">Projects</a>
         </div>
-      </div>
+      </nav>
       <!-- /#sidebar-wrapper - end -->
 
       <!-- Page Content -begin-->
       <div id="page-content-wrapper">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
-        >
-          <button class="btn btn-primary" id="menu-toggle">
+        <div class="menu-toggle-wrapper">
+          <button id="menu-toggle">
             Toggle Side Menu
           </button>
-        </nav>
+        </div>
 
-        <div class="container-fluid">
-          <h1 class="mt-4">Welcome to your project!</h1>
+        <div class="showcase-wrapper">
+          <h1>Welcome to your project!</h1>
           <p>
             To be able to begin please fill out the details below and click
             "Create item" to add a new ticket.
@@ -61,7 +55,7 @@
             Create item
           </button>
         </div>
-        <div id="item-list-wrapper">
+        <div id="form-list-wrapper">
           <form id="form" action="">
             <div class="form">
               <label for="task-name">Task name</label>

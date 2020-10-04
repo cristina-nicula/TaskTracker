@@ -3,3 +3,30 @@
 .text-align-center {
   text-align: center;
 }
+
+.invisible {
+  display: none;
+}
+
+.item-btn {
+  width: 30%;
+  padding: 20px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #9fcdff;
+  float: left;
+  &:hover {
+    background-color: #7abaff;
+  }
+}
+
+#form-list-wrapper .item-list .item {
+  margin-top: 20px;
+  width: 40%;
+  padding: 2%;
+  background-color: #9fcdff;
+  border-radius: 10px;
+  list-style: none;
+}
