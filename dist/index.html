@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Task tracker</title>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--  Fontawesome -->
+
+    <script
+      src="https://kit.fontawesome.com/461fad4b65.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Issue tracker</div>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action bg-light"
+            >Home</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-light"
+            >Tickets</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-light"
+            >Projects</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper - end -->
+
+      <!-- Page Content -begin-->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+        >
+          <button class="btn btn-primary" id="menu-toggle">
+            Toggle Side Menu
+          </button>
+        </nav>
+
+        <div class="container-fluid">
+          <h1 class="mt-4">Welcome to your project!</h1>
+          <p>
+            To be able to begin please fill out the details below and click
+            "Create item" to add a new ticket.
+          </p>
+          <button type="button" class="item-btn">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Create item
+          </button>
+        </div>
+        <div id="item-list-wrapper">
+          <form id="form" action="">
+            <div class="form">
+              <label for="task-name">Task name</label>
+              <input type="text" name="name" id="task-name" required />
+            </div>
+            <div class="form">
+              <label for="responsible">Responsible name</label>
+              <select id="responsible" name="responsible" required>
+                <option disabled selected>Please select the developer</option>
+                <option value="Developer 1">Developer 1</option>
+                <option value="Developer 2">Developer 2</option>
+                <option value="Developer 3">Developer 3</option>
+              </select>
+            </div>
+            <div class="form">
+              <label for="task-details">Task description</label>
+              <div id="fake_textarea" contenteditable>
+                <textarea
+                  name="task-details"
+                  id="task-details"
+                  cols="30"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div id="btn-wrapper">
+              <button type="submit" class="item-btn">
+                Create
+              </button>
+              <button type="button" class="item-btn">
+                Delete
+              </button>
+            </div>
+            <ul class="item-list"></ul>
+          </form>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -end -->
+    </div>
+    <!-- /#wrapper - end -->
+  </body>
+</html>
