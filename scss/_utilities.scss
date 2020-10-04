@@ -9,14 +9,13 @@
 }
 
 .item-btn {
-  width: 30%;
   padding: 20px 20px;
-  margin: 0 10px;
+  margin: auto;
   border-radius: 5px;
   border: none;
   outline: none;
   background-color: #9fcdff;
-  float: left;
+  cursor: pointer;
   &:hover {
     background-color: #7abaff;
   }
@@ -29,4 +28,23 @@
   background-color: #9fcdff;
   border-radius: 10px;
   list-style: none;
+}
+//Align elements in a container
+
+.align-elem-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.align-elem-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// margins
+
+.mg-left {
+  margin-left: 20px;
 }
