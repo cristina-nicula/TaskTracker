@@ -1,3 +1,6 @@
+.text-align-center {
+  text-align: center; }
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar; }
@@ -27,13 +30,21 @@ nav {
   background-color: #f8f9fa;
   min-height: 100vh;
   border-right: #cccccc 1px solid; }
-
-#sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem; }
-
-#sidebar-wrapper .list-group {
-  width: 15rem; }
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem; }
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+    display: flex;
+    flex-direction: column; }
+    #sidebar-wrapper .list-group .list-group-item {
+      text-decoration: none;
+      color: black;
+      padding: 20px 20px; }
+      #sidebar-wrapper .list-group .list-group-item:not(:last-child) {
+        border-bottom: #cccccc 1px solid; }
+      #sidebar-wrapper .list-group .list-group-item:hover {
+        background-color: #ded9d9; }
 
 #item-list-wrapper {
   border-radius: 5px;
