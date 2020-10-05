@@ -10,7 +10,7 @@ export class Item {
     newItemElement.className = "item";
     newItemElement.innerHTML = `
     <div>
-    <p> ${this.taskName}.</p>
+    <p> ${this.taskName}</p>
     <p>${this.responsible}</p>
     <p>${this.details}</p>
     </div>

@@ -20,6 +20,7 @@
 
 .item {
   margin-top: 20px;
+  min-width: 30%;
   padding: 20px 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -85,20 +86,33 @@ nav {
       #sidebar-wrapper .list-group .list-group-item:hover {
         background-color: #ded9d9; }
 
-#page-content-wrapper .menu-toggle-wrapper #menu-toggle {
-  color: white;
-  background-color: #007BFF;
-  padding: 6px 12px;
-  margin: 14px;
-  border-radius: 3px;
-  border: none;
-  outline-color: #007BFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
-  #page-content-wrapper .menu-toggle-wrapper #menu-toggle:hover {
-    background-color: #0b8cec; }
-
-#page-content-wrapper .showcase-wrapper {
-  margin-bottom: 20px; }
+#page-content-wrapper {
+  width: 100%; }
+  #page-content-wrapper .menu-toggle-wrapper #menu-toggle {
+    color: white;
+    background-color: #007BFF;
+    padding: 6px 12px;
+    margin: 14px;
+    border-radius: 3px;
+    border: none;
+    outline-color: #007BFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+    #page-content-wrapper .menu-toggle-wrapper #menu-toggle:hover {
+      background-color: #0b8cec; }
+  #page-content-wrapper .showcase-wrapper {
+    margin-bottom: 20px; }
+  #page-content-wrapper #task-box-wrapper {
+    display: flex;
+    justify-content: flex-start; }
+    #page-content-wrapper #task-box-wrapper .box {
+      border: 1px solid #ded9d9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      height: 200px;
+      flex-basis: 200px;
+      margin: 0 10px; }
+      #page-content-wrapper #task-box-wrapper .box .h-wrapper {
+        background-color: #ded9d9;
+        padding: 2px; }
 
 #modal-container {
   display: flex;

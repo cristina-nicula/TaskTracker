@@ -66,6 +66,7 @@ nav {
 }
 
 #page-content-wrapper {
+  width: 100%;
   .menu-toggle-wrapper {
     #menu-toggle {
       color: white;
@@ -84,7 +85,23 @@ nav {
   .showcase-wrapper {
     margin-bottom: 20px;
   }
+  #task-box-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    .box {
+      border: 1px solid $bg-secondary;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      height: 200px;
+      flex-basis: 200px;
+      margin: 0 10px;
+      .h-wrapper {
+        background-color: $bg-secondary;
+        padding: 2px;
+      }
+    }
+  }
 }
+
 #modal-container {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);

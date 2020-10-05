@@ -28,12 +28,12 @@
 
  .item {
   margin-top: 20px;
-  //width: 40%;
+   min-width: 30%;
   padding: 20px 20px;
   background-color: $bg-main;
   border-radius: 10px;
   list-style: none;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 //Align elements in a container
 
