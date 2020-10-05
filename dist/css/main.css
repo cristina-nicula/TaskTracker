@@ -20,11 +20,11 @@
 
 .item {
   margin-top: 20px;
-  width: 40%;
-  padding: 2%;
-  background-color: #9fcdff;
+  padding: 20px 20px;
+  background-color: #f8f9fa;
   border-radius: 10px;
-  list-style: none; }
+  list-style: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
 
 .align-elem-right {
   display: flex;

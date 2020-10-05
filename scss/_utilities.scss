@@ -1,5 +1,5 @@
 // define reusable classes (positioning, button types, lines)
-
+@import "variables.scss";
 .text-align-center {
   text-align: center;
 }
@@ -28,11 +28,12 @@
 
  .item {
   margin-top: 20px;
-  width: 40%;
-  padding: 2%;
-  background-color: #9fcdff;
+  //width: 40%;
+  padding: 20px 20px;
+  background-color: $bg-main;
   border-radius: 10px;
   list-style: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
 }
 //Align elements in a container
 

@@ -10,9 +10,9 @@ export class Item {
     newItemElement.className = "item";
     newItemElement.innerHTML = `
     <div>
-    <p> Task name: ${this.taskName}</p>
-    <p> Responsible name: ${this.responsible}</p>
-    <p> Task details: ${this.details}</p>
+    <p> ${this.taskName}.</p>
+    <p>${this.responsible}</p>
+    <p>${this.details}</p>
     </div>
     `;
     parent.appendChild(newItemElement);
