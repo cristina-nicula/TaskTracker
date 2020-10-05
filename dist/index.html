@@ -19,10 +19,49 @@
       src="https://kit.fontawesome.com/461fad4b65.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js" defer></script>
+    <script src="./js/app.js" defer type="module"></script>
   </head>
 
   <body>
+    <div id="modal-container" class="hidden">
+      <div id="form-list-wrapper">
+        <form id="form" class="modal" action="">
+          <div class="form">
+            <label for="task-name">Task name</label>
+            <input type="text" name="name" id="task-name" required />
+          </div>
+          <div class="form">
+            <label for="responsible">Responsible name</label>
+            <select id="responsible" name="responsible" required>
+              <option disabled selected>Please select the developer</option>
+              <option value="Developer 1">Developer 1</option>
+              <option value="Developer 2">Developer 2</option>
+              <option value="Developer 3">Developer 3</option>
+            </select>
+          </div>
+          <div class="form">
+            <label for="task-details">Task description</label>
+            <div id="textarea">
+              <textarea
+                name="task-details"
+                id="task-details"
+                cols="30"
+                rows="7"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div id="btn-wrapper">
+            <button type="submit" class="item-btn">
+              Create
+            </button>
+            <button type="button" id="close" class="item-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <!--wrapper -->
     <div id="wrapper">
       <!-- Sidebar -->
@@ -47,51 +86,12 @@
         <div class="showcase-wrapper mg-left">
           <h1>Welcome to your project!</h1>
           <p>
-            To be able to begin please fill out the details below and click
-            "Create item" to add a new ticket.
+            To create a new incident please click the button below.
           </p>
-          <button type="button" class="item-btn">
+          <button type="button" id="open" class="item-btn">
             <i class="fa fa-plus" aria-hidden="true"></i>
             Create item
           </button>
-        </div>
-
-        <div id="form-list-wrapper">
-          <form id="form" action="">
-            <div class="form">
-              <label for="task-name">Task name</label>
-              <input type="text" name="name" id="task-name" required />
-            </div>
-            <div class="form">
-              <label for="responsible">Responsible name</label>
-              <select id="responsible" name="responsible" required>
-                <option disabled selected>Please select the developer</option>
-                <option value="Developer 1">Developer 1</option>
-                <option value="Developer 2">Developer 2</option>
-                <option value="Developer 3">Developer 3</option>
-              </select>
-            </div>
-            <div class="form">
-              <label for="task-details">Task description</label>
-              <div id="textarea">
-                <textarea
-                  name="task-details"
-                  id="task-details"
-                  cols="30"
-                  rows="7"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div id="btn-wrapper">
-              <button type="submit" class="item-btn">
-                Create
-              </button>
-              <button type="button" class="item-btn">
-                Cancel
-              </button>
-            </div>
-          </form>
         </div>
         <ul class="item-list"></ul>
       </div>

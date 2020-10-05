@@ -1,25 +1,19 @@
+import { Item } from "./classes.js";
+
 const form = document.getElementById("form");
 const toggleBtn = document.getElementById("menu-toggle");
-const element = [];
+const modal_container = document.getElementById("modal-container");
+const open_modal = document.getElementById("open");
+const close_modal = document.getElementById("close");
+
+const toggleModalHandler = () => {
+  modal_container.classList.toggle("hidden");
+};
 
 function toggleSideMenu() {
   const sideMenu = document.getElementById("sidebar-wrapper");
   sideMenu.classList.toggle("invisible");
 }
-
-const renderItemHandler = (taskName, taskRes, taskDetails) => {
-  const newItemElement = document.createElement("li");
-  newItemElement.className = "item";
-  newItemElement.innerHTML = `
-    <div>
-    <p> Task name: ${taskName}</p>
-    <p> Responsible name: ${taskRes}</p>
-    <p> Task details: ${taskDetails}</p>
-    </div>
-    `;
-  const listItem = document.querySelector(".item-list");
-  listItem.appendChild(newItemElement);
-};
 
 const addItemHandler = (event) => {
   event.preventDefault();
@@ -34,20 +28,15 @@ const addItemHandler = (event) => {
     alert("Please enter required values to create your task.");
     return;
   }
-  const newElement = {
-    name: taskName,
-    responsible: responsible,
-    details: taskDetails,
-  };
-
-  element.push(newElement);
-  console.log(element);
-  renderItemHandler(
-    newElement.name,
-    newElement.responsible,
-    newElement.details
-  );
+  const itemList = document.querySelector("ul.item-list");
+  const item = new Item(taskName, responsible, taskDetails);
+  item.render(itemList);
+  form.reset();
+  toggleModalHandler();
 };
 
 form.addEventListener("submit", addItemHandler);
 toggleBtn.addEventListener("click", toggleSideMenu);
+
+open_modal.addEventListener("click", toggleModalHandler);
+close_modal.addEventListener("click", toggleModalHandler);
