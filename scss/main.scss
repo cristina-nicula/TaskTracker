@@ -91,11 +91,15 @@ nav {
     .box {
       border: 1px solid $bg-secondary;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      height: 200px;
+      min-height: 200px;
       flex-basis: 200px;
       margin: 0 10px;
+      &--over {
+        opacity: 0.5;
+      }
       .h-wrapper {
-        background-color: $bg-secondary;
+        background-color: $bg-main;
+        border-bottom: 0.5px solid $bg-secondary;
         padding: 2px;
       }
     }
@@ -135,9 +139,7 @@ nav {
       select {
         background-color: #fff;
       }
-      #form-list-wrapper .item-list {
-        list-style: none;
-      }
+
       #btn-wrapper {
         display: flex;
         flex-direction: row;

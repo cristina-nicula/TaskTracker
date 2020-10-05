@@ -7,6 +7,14 @@
 .hidden {
   visibility: hidden; }
 
+.item-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; }
+
 .item-btn {
   padding: 20px 20px;
   border-radius: 5px;
@@ -19,11 +27,11 @@
     background-color: #7abaff; }
 
 .item {
-  margin-top: 20px;
-  min-width: 30%;
-  padding: 20px 20px;
+  margin-bottom: 10px;
+  min-width: 150px;
+  padding: 5px 5px;
   background-color: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 3px;
   list-style: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
 
@@ -107,11 +115,14 @@ nav {
     #page-content-wrapper #task-box-wrapper .box {
       border: 1px solid #ded9d9;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      height: 200px;
+      min-height: 200px;
       flex-basis: 200px;
       margin: 0 10px; }
+      #page-content-wrapper #task-box-wrapper .box--over {
+        opacity: 0.5; }
       #page-content-wrapper #task-box-wrapper .box .h-wrapper {
-        background-color: #ded9d9;
+        background-color: #f8f9fa;
+        border-bottom: 0.5px solid #ded9d9;
         padding: 2px; }
 
 #modal-container {
@@ -142,8 +153,6 @@ nav {
         box-sizing: border-box; }
       #modal-container #form-list-wrapper #form select {
         background-color: #fff; }
-      #modal-container #form-list-wrapper #form #form-list-wrapper .item-list {
-        list-style: none; }
       #modal-container #form-list-wrapper #form #btn-wrapper {
         display: flex;
         flex-direction: row;

@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/app.js" defer type="module"></script>
+    <script src="./js/drag_and_drop.js" defer type="module"></script>
   </head>
 
   <body>
@@ -93,7 +94,6 @@
             Create item
           </button>
         </div>
-        <ul class="item-list"></ul>
 
         <!--task boxes - begin -->
         <div id="task-box-wrapper" class="mg-left text-align-center">
@@ -101,6 +101,13 @@
             <div class="h-wrapper">
               <h5>ASSIGNED</h5>
             </div>
+            <ul class="item-list">
+              <li id="draggableItem" class="item" draggable="true">
+                <p>Create a form</p>
+                <p>Developer 1</p>
+                <p>Render a form to the screen.</p>
+              </li>
+            </ul>
           </div>
           <div id="in-progress" class="box">
             <div class="h-wrapper">

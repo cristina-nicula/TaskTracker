@@ -8,6 +8,7 @@ export class Item {
   render(parent) {
     const newItemElement = document.createElement("li");
     newItemElement.className = "item";
+    newItemElement.setAttribute("draggable", "true");
     newItemElement.innerHTML = `
     <div>
     <p> ${this.taskName}</p>
