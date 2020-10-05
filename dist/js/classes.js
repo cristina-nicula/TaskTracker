@@ -1,3 +1,4 @@
+let counter = 0;
 export class Item {
   constructor(name, responsible, details) {
     this.taskName = name;
@@ -17,6 +18,11 @@ export class Item {
     </div>
     `;
     parent.appendChild(newItemElement);
+   newItemElement.id = `item-${counter}`;
+   counter++;
+    newItemElement.addEventListener("dragstart", e => {
+      e.dataTransfer.setData("text/plain", newItemElement.id )
+    })
   }
 }
 
