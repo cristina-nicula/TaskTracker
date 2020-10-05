@@ -40,3 +40,11 @@ toggleBtn.addEventListener("click", toggleSideMenu);
 
 open_modal.addEventListener("click", toggleModalHandler);
 close_modal.addEventListener("click", toggleModalHandler);
+modal_container.addEventListener("click", toggleModalHandler);
+modal_container.children[0].addEventListener(
+  "click",
+  (e) => {
+    e.stopPropagation();
+  },
+  false
+);
