@@ -1,9 +1,3 @@
-// const draggableElement = document.querySelector(".item");
-//
-// draggableElement.addEventListener("dragstart", (e) => {
-//   e.dataTransfer.setData("text/plain", draggableElement.id);
-// });
-//
 for (const dropZone of document.querySelectorAll(".box")) {
   dropZone.addEventListener("dragover", (e) => {
     e.preventDefault();
