@@ -22,7 +22,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1rem;
   width: 100%;
 }
 
@@ -92,6 +92,7 @@ nav {
       border: 1px solid $bg-secondary;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       min-height: 200px;
+      min-width: 15rem;
       flex-basis: 200px;
       &--over {
         opacity: 0.5;

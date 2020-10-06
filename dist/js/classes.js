@@ -12,23 +12,21 @@ export class Item {
     newItemElement.setAttribute("draggable", "true");
     newItemElement.innerHTML = `
     <div>
-    <a id="delete-task" href="#" style="text-decoration: none"><i style="display: flex; justify-content: flex-end" class="fas fa-times"></i></a>
-    <p contenteditable="true"> ${this.taskName}</p>
+    <div class="align-elem-right"><p class="delete-task">&times;</p></div>
+    <p class="p-top-bottom" contenteditable="true"> ${this.taskName}</p>
     <p>${this.responsible}</p>
-    <p contenteditable="true">${this.details}</p>
+    <p class="p-top-bottom" contenteditable="true">${this.details}</p>
     </div>
     `;
     parent.appendChild(newItemElement);
-   newItemElement.id = `item-${counter}`;
-   counter++;
-    newItemElement.addEventListener("dragstart", e => {
-      e.dataTransfer.setData("text/plain", newItemElement.id )
-    })
-      const deleteSign = document.getElementById('delete-task');
-    deleteSign.addEventListener("click", ()=> {
-        newItemElement.parentNode.removeChild(newItemElement);
-    })
+    newItemElement.id = `item-${counter}`;
+    counter++;
+    newItemElement.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("text/plain", newItemElement.id);
+    });
+    const deleteSign = newItemElement.querySelector(".delete-task");
+    deleteSign.addEventListener("click", () => {
+      newItemElement.parentNode.removeChild(newItemElement);
+    });
   }
 }
-
-

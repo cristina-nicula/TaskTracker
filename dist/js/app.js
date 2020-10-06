@@ -48,3 +48,13 @@ modal_container.children[0].addEventListener(
   },
   false
 );
+
+const itemList = document.querySelector("ul.item-list");
+const item = new Item("My example task", "Cristina", "This is my task");
+item.render(itemList);
+item.render(itemList);
+item.render(itemList);
+item.render(itemList);
+item.render(itemList);
+item.render(itemList);
+item.render(itemList);
