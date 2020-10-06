@@ -13,9 +13,9 @@ export class Item {
     newItemElement.innerHTML = `
     <div>
     <a id="delete-task" href="#" style="text-decoration: none"><i style="display: flex; justify-content: flex-end" class="fas fa-times"></i></a>
-    <p> ${this.taskName}</p>
+    <p contenteditable="true"> ${this.taskName}</p>
     <p>${this.responsible}</p>
-    <p>${this.details}</p>
+    <p contenteditable="true">${this.details}</p>
     </div>
     `;
     parent.appendChild(newItemElement);
