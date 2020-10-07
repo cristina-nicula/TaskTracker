@@ -26,11 +26,6 @@ body {
   width: 100%;
 }
 
-div,
-nav {
-  display: block;
-}
-
 #wrapper {
   display: flex;
 }
@@ -67,6 +62,10 @@ nav {
 
 #page-content-wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
   .menu-toggle-wrapper {
     #menu-toggle {
       color: white;
@@ -77,27 +76,32 @@ nav {
       border: none;
       outline-color: $toggle-btn-color;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
       &:hover {
         background-color: $hover-toggle-btn;
       }
     }
   }
+
   .showcase-wrapper {
     margin-bottom: 20px;
   }
+
   #task-box-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
+
     .box {
       border: 1px solid $bg-secondary;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      min-height: 200px;
       min-width: 15rem;
-      flex-basis: 200px;
+
       &--over {
         opacity: 0.5;
       }
-      .h-wrapper {
+
+      .header-wrapper {
         background-color: $bg-main;
         border-bottom: 0.5px solid $bg-secondary;
         padding: 2px;
@@ -136,6 +140,7 @@ nav {
         border-radius: 4px;
         box-sizing: border-box;
       }
+
       select {
         background-color: #fff;
       }
@@ -147,4 +152,15 @@ nav {
       }
     }
   }
+}
+
+#project-container {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#project-wrapper {
+  display: flex;
 }

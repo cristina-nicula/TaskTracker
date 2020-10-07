@@ -1,7 +1,7 @@
 import { Item } from "./classes.js";
 
 const form = document.getElementById("form");
-const toggleBtn = document.getElementById("menu-toggle");
+
 const modal_container = document.getElementById("modal-container");
 const open_modal = document.getElementById("open");
 const close_modal = document.getElementById("close");
@@ -9,11 +9,6 @@ const close_modal = document.getElementById("close");
 const toggleModalHandler = () => {
   modal_container.classList.toggle("hidden");
 };
-
-function toggleSideMenu() {
-  const sideMenu = document.getElementById("sidebar-wrapper");
-  sideMenu.classList.toggle("invisible");
-}
 
 const addItemHandler = (event) => {
   event.preventDefault();
@@ -36,10 +31,10 @@ const addItemHandler = (event) => {
 };
 
 form.addEventListener("submit", addItemHandler);
-toggleBtn.addEventListener("click", toggleSideMenu);
 
 open_modal.addEventListener("click", toggleModalHandler);
 close_modal.addEventListener("click", toggleModalHandler);
+
 modal_container.addEventListener("click", toggleModalHandler);
 modal_container.children[0].addEventListener(
   "click",

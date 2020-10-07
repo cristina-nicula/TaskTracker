@@ -7,13 +7,12 @@
 .invisible {
   display: none;
 }
-
+//
 .hidden {
   visibility: hidden;
 }
 
 .item-list {
-  max-height: 25rem;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -72,12 +71,6 @@
 
 .mg-right {
   margin-right: 10px;
-}
-
-// scroll
-
-.scroll {
-  overflow-y: scroll;
 }
 
 //padding

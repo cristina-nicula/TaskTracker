@@ -2,7 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="./js/toggle_side_menu.js" defer></script>
+    <title>Project list</title>
   </head>
-  <body></body>
+  <body>
+    <div id="project-wrapper">
+      <nav id="sidebar-wrapper">
+        <div class="sidebar-heading text-align-center">Task tracker</div>
+        <div class="list-group text-align-center">
+          <a href="#" class="list-group-item">Home</a>
+          <a href="index.html" class="list-group-item">Tickets</a>
+          <a href="project.html" class="list-group-item">Projects</a>
+        </div>
+      </nav>
+      <div id="page-content-wrapper">
+        <div class="menu-toggle-wrapper">
+          <button id="menu-toggle" class="mg-left">
+            Toggle Side Menu
+          </button>
+        </div>
+        <div id="project-container">
+          <div class="header-container">
+            <div><h2 class="project-header mg-left">Projects</h2></div>
+            <div>
+              <button class="item-btn mg-right">
+                Create project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
