@@ -46,6 +46,11 @@ modal_container.children[0].addEventListener(
 
 const itemList = document.querySelector("ul.item-list");
 const item = new Item("My example task", "Cristina", "This is my task");
+const largeitem = new Item(
+  "My example task",
+  "Cristina",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores delectus fugiat libero rem tenetur ut. Dolorem nam reiciendis sed."
+);
 item.render(itemList);
 item.render(itemList);
 item.render(itemList);
@@ -53,3 +58,4 @@ item.render(itemList);
 item.render(itemList);
 item.render(itemList);
 item.render(itemList);
+largeitem.render(itemList);
