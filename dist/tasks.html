@@ -25,11 +25,22 @@
         <form id="form" class="modal" action="">
           <div class="form">
             <label for="task-name">Task name</label>
-            <input type="text" name="name" id="task-name" required />
+            <input
+              type="text"
+              name="name"
+              id="task-name"
+              class="editable-select"
+              required
+            />
           </div>
           <div class="form">
             <label for="responsible">Responsible name</label>
-            <select id="responsible" name="responsible" required>
+            <select
+              id="responsible"
+              name="responsible"
+              class="editable-select"
+              required
+            >
               <option disabled selected>Please select the developer</option>
               <option value="Developer 1">Developer 1</option>
               <option value="Developer 2">Developer 2</option>
@@ -40,6 +51,7 @@
             <label for="task-details">Task description</label>
             <div id="textarea">
               <textarea
+                class="editable-select"
                 name="task-details"
                 id="task-details"
                 cols="30"
@@ -48,7 +60,6 @@
               ></textarea>
             </div>
           </div>
-          head
           <div id="btn-wrapper">
             <button type="submit" class="item-btn mg-right">
               Create
@@ -64,10 +75,12 @@
     <div id="wrapper">
       <!-- Sidebar -->
       <nav id="sidebar-wrapper">
-        <div class="sidebar-heading text-align-center">Task tracker</div>
+        <div class="sidebar-heading text-align-center">
+          <a href="home.html">Task tracker</a>
+        </div>
         <div class="list-group text-align-center">
           <a href="home.html" class="list-group-item">Home</a>
-          <a href="ticket.html" class="list-group-item">Tasks</a>
+          <a href="tasks.html" class="list-group-item current">Tasks</a>
         </div>
       </nav>
       <!-- /#sidebar-wrapper - end -->
@@ -81,16 +94,10 @@
         </div>
 
         <div class="showcase-wrapper mg-left">
-          <h3>Welcome to your project.</h3>
-          <p>
-            To create a new incident please click the button below.
-          </p>
           <button type="button" id="open" class="item-btn">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-            Create item
+            Create task
           </button>
         </div>
-
         <!--task boxes - begin -->
         <div id="task-box-wrapper" class="mg-left text-align-center">
           <div class="box mg-right">

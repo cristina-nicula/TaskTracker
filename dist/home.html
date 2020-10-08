@@ -14,10 +14,12 @@
   <body>
     <div id="project-wrapper">
       <nav id="sidebar-wrapper">
-        <div class="sidebar-heading text-align-center">Task tracker</div>
+        <div class="sidebar-heading text-align-center">
+          <a href="home.html">Task tracker</a>
+        </div>
         <div class="list-group text-align-center">
-          <a href="home.html" class="list-group-item">Home</a>
-          <a href="ticket.html" class="list-group-item">Tasks</a>
+          <a href="home.html" class="list-group-item current">Home</a>
+          <a href="tasks.html" class="list-group-item">Tasks</a>
         </div>
       </nav>
       <div id="page-content-wrapper">
@@ -27,10 +29,10 @@
           </button>
         </div>
         <div class="showcase-wrapper mg-left">
-          <h1>Welcome to your task tracker.</h1>
-          <p>
-            To begin tracking tasks go to "Tasks" page.
-          </p>
+          <h3>Welcome to your task tracker!</h3>
+          <button type="button" id="open" class="item-btn">
+            <a class="text-align-center" href="tasks.html">See my tasks</a>
+          </button>
         </div>
       </div>
     </div>

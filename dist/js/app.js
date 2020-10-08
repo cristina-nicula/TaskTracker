@@ -45,6 +45,7 @@ modal_container.children[0].addEventListener(
 );
 
 const itemList = document.querySelector("ul.item-list");
+
 const item = new Item("My example task", "Cristina", "This is my task");
 const largeitem = new Item(
   "My example task",

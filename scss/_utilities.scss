@@ -25,16 +25,24 @@
 }
 
 .item-btn {
-  padding: 20px 20px;
+  padding: 15px 15px;
   border-radius: 5px;
   border: none;
   outline: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 
   background-color: #9fcdff;
   cursor: pointer;
   &:hover {
     background-color: #7abaff;
+  }
+  & > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px;
+    text-align: center;
   }
 }
 

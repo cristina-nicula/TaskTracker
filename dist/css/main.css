@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Peddana&family=Piazzolla:wght@200&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Peddana&family=Piazzolla:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 .text-align-center {
   text-align: center; }
 
@@ -21,15 +22,22 @@
   padding: 0 10px; }
 
 .item-btn {
-  padding: 20px 20px;
+  padding: 15px 15px;
   border-radius: 5px;
   border: none;
   outline: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   background-color: #9fcdff;
   cursor: pointer; }
   .item-btn:hover {
     background-color: #7abaff; }
+  .item-btn > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px;
+    text-align: center; }
 
 .item {
   margin-bottom: 10px;
@@ -87,6 +95,19 @@
   .editable-select option {
     font-family: "Roboto", sans-serif; }
 
+@media (min-width: 768px) {
+  #page-content-wrapper .menu-toggle-wrapper {
+    display: none; }
+  #sidebar-wrapper {
+    display: block; }
+  #sidebar-wrapper .list-group {
+    min-width: 15rem; }
+  .item-btn > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 18px 18px; } }
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -114,14 +135,14 @@ body {
   min-height: 100vh;
   border-right: #cccccc 1px solid; }
   #sidebar-wrapper .sidebar-heading {
-    padding: 0.875rem 1.25rem;
+    padding: 1rem 1rem;
     font-size: 1.2rem;
-    font-style: italic;
-    font-weight: bold;
-    background-color: #007BFF;
-    color: #ffffff; }
+    font-family: "Chilanka", cursive;
+    background-color: #007BFF; }
+    #sidebar-wrapper .sidebar-heading a {
+      text-decoration: none;
+      color: #ffffff; }
   #sidebar-wrapper .list-group {
-    width: 15rem;
     display: flex;
     flex-direction: column; }
     #sidebar-wrapper .list-group .list-group-item {
@@ -131,6 +152,10 @@ body {
       #sidebar-wrapper .list-group .list-group-item:not(:last-child) {
         border-bottom: #cccccc 1px solid; }
       #sidebar-wrapper .list-group .list-group-item:hover {
+        background-color: #9fcdff;
+        color: #243665;
+        font-weight: bold; }
+      #sidebar-wrapper .list-group .list-group-item.current {
         background-color: #9fcdff;
         color: #243665;
         font-weight: bold; }
@@ -154,7 +179,12 @@ body {
       background-color: #0b8cec;
       cursor: pointer; }
   #page-content-wrapper .showcase-wrapper {
+    margin-top: 20px;
     margin-bottom: 20px; }
+    #page-content-wrapper .showcase-wrapper > h3 {
+      margin-top: 0;
+      line-height: 1.2rem;
+      font-weight: normal; }
   #page-content-wrapper #task-box-wrapper {
     display: flex;
     flex-direction: row;

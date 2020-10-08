@@ -20,7 +20,7 @@ export class Item {
               <option value="Developer 2">Developer 2</option>
               <option value="Developer 3">Developer 3</option>
     </select>
-    <p class="p-top-bottom text-align-left" contenteditable="true">${this.details}</p>
+    <p class="p-top-bottom text-align-left editable-select" contenteditable="true">${this.details}</p>
     </div>
     `;
     parent.appendChild(newItemElement);
