@@ -6,7 +6,7 @@ Access it here: https://task-tracker.cristina-nicula.com/
 
 ### Requirements
 
-* Node.js installed.
+* Node.js installed...
 
 ### Setup
 
